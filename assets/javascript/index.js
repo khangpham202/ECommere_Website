@@ -39,9 +39,3 @@ function myFuntion(event) {
     dropdowns.classList.add("show");
   }
 }
-
-document
-  .querySelector(".header__icon--link--search")
-  .addEventListener("click", (event) => {
-    event.preventDefault();
-  });
