@@ -288,6 +288,10 @@
     background-color: hsla(0,0%,100%,.8);
     display: none;
     animation: createBox linear 0.3s;
+    -webkit-animation-name: createBox;
+    -webkit-animation-duration: 0.3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
 }
 .sale__item:hover .sale__content{
     display:flex;
@@ -354,6 +358,10 @@
     top: 0;
     transition: 0.7s;
     animation: fadeIn linear 0.4s;
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
 }
 .product__text{
    height: 89px;
@@ -449,6 +457,10 @@
     align-items: center;
     border-radius: 3px;
     animation: downTOUP2 ease-in 0.4s;
+    -webkit-animation-name: downTOUP2;
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
     transform: translateY(-45px);
     cursor: pointer;
     display:none;
@@ -468,6 +480,10 @@
     align-items: center;
     border-radius: 3px;
     animation: downTOUP2 ease-in 0.4s;
+    -webkit-animation-name: downTOUP2;
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
     transform: translateY(-45px);
     cursor: pointer;
     display:none;
