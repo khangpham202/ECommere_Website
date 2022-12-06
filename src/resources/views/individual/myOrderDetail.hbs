@@ -1,0 +1,113 @@
+<link rel="stylesheet" href="/css/myOrderDetail.css">
+<div class="grid wide mt-5 app">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="left-taskboard">
+                <div class="user">
+                    <img src="   /img/profile.jpg" alt="">
+                    <div class="user-info">
+                        <span>khangjr2612</span>
+                        <a href=""><i class="fa-solid fa-pen"></i>Sửa hồ sơ</a>
+                    </div>
+                </div>
+                <hr>
+                <ul class="taskboard__list">
+                    <li class="taskboard__list--item">
+                        <a href="/profile" ><i class="fa-solid fa-user text-primary"></i>Tài khoản của tôi</a>
+                    </li>
+                    <li class="taskboard__list--item">
+                        <a href="/order" class="text-danger"><i class="fa-solid fa-receipt text-primary"></i>Đơn mua</a>
+                    </li>
+                    <li class="taskboard__list--item">
+                        <a href=""><i class="fa-solid fa-bell text-danger"></i>Thông báo</a>
+                    </li>
+                    <li class="taskboard__list--item">
+                        <a href=""><i class="fa-solid fa-heart text-danger"></i>Kho voucher</a>
+                    </li>
+                </ul>   
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="container orderDetail">
+               <div class="orderDetail_header">
+                    <div class="orderDetail_header--nav">
+                        <a href="/order" class="nav_return">
+                            <span><i class="fa-solid fa-chevron-left"></i></i>Trở Lại</span>
+                        </a>
+                        <span class="orderStatus"><i class="fa-solid fa-hourglass-half"></i>Chờ Xác Nhận</span>
+                    </div>
+                    <hr class="orderDetailHeaderHr">
+                    <div class="orderDetail_header--status">
+                        <div class="card card-timeline px-2 border-none"> 
+                            <ul class="bs4-order-tracking"> 
+                                <li class="step active"> 
+                                    <div class="Exception"><img src="/img/delivery_status/svgexport-13.svg" alt=""></div> 
+                                    <span>Đơn hàng đã đặt</span>
+                                    <p>times</p>
+                                </li>
+                                <li class="step active"> 
+                                    <div><img src="/img/delivery_status/svgexport-14.svg" alt=""></div> 
+                                    <span>Chờ Xác Nhận</span> 
+                                </li> 
+                                <li class="step"> 
+                                    <div class="Exception1"><img src="/img/delivery_status/svgexport-15.svg" alt=""></div> 
+                                    <span>Chờ Lấy Hàng</span>
+                                </li> 
+                                <li class="step "> 
+                                    <div class="Exception1"><img src="/img/delivery_status/svgexport-16.svg" alt=""></div> 
+                                    <span>Đang Giao</span>
+                                </li> 
+                                <li class="step "> 
+                                    <div class="Exception1"><img src="/img/delivery_status/svgexport-17.svg" alt=""></div> 
+                                    <span>Đánh Giá</span>
+                                </li> 
+                            </ul> 
+                        </div>
+                        <div class="orderDetail_header--contact">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <span class="header_message">
+                                        Đang chờ hệ thống xác nhận đơn hàng. Trong thời gian này bị có thể liên hệ với Người bán để xác nhận thêm thông tin đơn hàng nhé !
+                                    </span>
+                                </div>
+                                <div class="col-md-4" class="contact-btn">
+                                    <button type="button" class="btn btn-secondary btn-lg disabled">Chờ</button>                         
+                                    <button type="button" class="btn btn-outline-secondary">Liên Hệ Người Ban</button>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#cancelOrderModal">
+                                    Huỷ Đơn Hàng
+                                    </button>
+                                    <!-- Cancel Modal Modal -->
+                                    <div class="modal fade " id="cancelOrderModal" tabindex="-1" role="dialog" aria-labelledby="cancelOrderModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog " role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                Đồng ý huỷ bỏ đơn hàng ?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Huỷ</button>
+                                                    <button type="button" onclick="deleteOrder()" class="btn btn-danger">Đồng ý</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="orderDetail_header--address" id="orderDetail_header--address">    
+                    </div>  
+               </div>
+            </div>
+            <div class="orderDetail_content" id="orderDetail_content">
+            </div>
+            <div class="orderDetail_price" id="orderDetail_price">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/js/myOrderDetail.js"></script>
+

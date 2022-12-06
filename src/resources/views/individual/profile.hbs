@@ -1,0 +1,85 @@
+<link rel="stylesheet" href="/css/profile.css">
+
+
+<div class="grid wide mt-5 app">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="left-taskboard">
+                <div class="user">
+                    <img src="/img/profile.jpg" alt="">
+                    <div class="user-info">
+                        <span>khangjr2612</span>
+                        <a href=""><i class="fa-solid fa-pen"></i>Sửa hồ sơ</a>
+                    </div>
+                </div>
+                <hr>
+                <ul class="taskboard__list">
+                    <li class="taskboard__list--item">
+                        <a href="" class="text-danger"><i class="fa-solid fa-user text-primary"></i>Tài khoản của tôi</a>
+                    </li>
+                    <li class="taskboard__list--item">
+                        <a href="/order"><i class="fa-solid fa-receipt text-primary"></i>Đơn mua</a>
+                    </li>
+                    <li class="taskboard__list--item">
+                        <a href=""><i class="fa-solid fa-bell text-danger"></i>Thông báo</a>
+                    </li>
+                    <li class="taskboard__list--item">
+                        <a href=""><i class="fa-solid fa-heart text-danger"></i>Kho voucher</a>
+                    </li>
+                </ul>   
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="container profile">
+                <div class="profile__header">
+                    <h2>Hồ Sơ Của Tôi</h2>
+                    <span>Quản lý thông tin hồ sơ để bảo mật tài khoản</span>
+                    <hr>
+                </div>
+                <div class="profile__content">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="profile__content--text">
+                                <span class="text__title">Tên:</span>
+                                <span class="text__value">Pham Tan Khang</span>
+                            </div>
+                            <div class="profile__content--text">
+                                <span class="text__title">Email:</span>
+                                <span class="text__value">20010904@st.phenikaa-uni.edu.vn</span>
+                            </div>
+                            <div class="profile__content--text">
+                                <span class="text__title">Địa chỉ:</span>
+                                <span class="text__value">Sir Matt Busby Way, Old Trafford, Stretford, Manchester </span>
+                            </div>
+                            <div class="profile__content--text">
+                                <span class="text__title">Số điện thoại: </span>
+                                <span class="text__value"> 0968 86 6666</span>
+                            </div>
+                            <div class="profile__content--text gender-option">
+                                <span class="text__title">Giới tính: </span>
+                                <div class="text__value gender-option">
+                                     <input type="radio" id="man" name="fav_sex" value="nam" checked>
+                                     <label for="man">Nam</label><br>
+                                     <input type="radio" id="woman" name="fav_sex" value="nu">
+                                     <label for="woman">Nữ</label><br>
+                                     <input type="radio" id="other" name="fav_sex" value="khac">
+                                     <label for="other">Khác</label>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-3 profile__content--img">
+                            <img src="   /img/profile.jpg" alt="">
+                            <label for="files" class="btn btn-image">Chọn ảnh</label>
+                            <input id="files" style="visibility:hidden;" type="file">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.title = 'Tài Khoản Của Tôi'
+</script>

@@ -1,0 +1,208 @@
+<style>
+  
+  .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #fff;
+}
+.header__welcome{
+  padding-top: 3px;
+}
+.header__welcome:hover{
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.dropdown-item:hover{
+  background-color: rgb(206, 204, 204);
+}
+.user_img{
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+</style>
+
+<header class="header"  id="myHeader">
+        <div class="grid wide">
+          <div class="row header__list hide-on-mobile-tablet" id="header__list">
+            <div class="col l-4 header__list--item">
+              <a href="" class="header__phone">
+                <i class="fa-solid fa-phone"></i>
+                0968 86 6666
+              </a>
+            </div>
+            <div class="col l-4 header__list--item">
+              <span class="header__center"
+                >FREE SHIPPING CHO HÓA ĐƠN TRÊN 999K</span
+              >
+            </div>
+            <div class="col l-4 header__list--item header__account" id="login">
+              <a href="/login" class="header__text"> Đăng nhập </a>
+              <a href="/login" class="header__text header__account--register">
+                Đăng ký
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="header__separated hide-on-mobile-tablet"></div>
+        <div class="grid wide">
+          <div class="row header_content">
+            <div class="col l-2 c-2 header__logo">
+              <a href="/">
+                <img src="/img/logo.png" alt="" />
+              </a>
+            </div>
+            <div class="col l-8 header__category hide-on-mobile-tablet">
+              <ul class="header__category--list">
+                <li class="header__category--item">
+                  <a href="/product/man" class="header__category--link">
+                    NAM
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="header__category--drop--menu">
+                    <li><a href="">Áo thể thao</a></li>
+                    <li><a href="">Áo Nike</a></li>
+                    <li><a href="">Quần Jean</a></li>
+                  </ul>
+                </li>
+                <li class="header__category--item">
+                  <a href="/product/woman" class="header__category--link">
+                    NỮ
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="header__category--drop--menu">
+                    <li><a href="">Quần Jeans</a></li>
+                    <li><a href="">Váy</a></li>
+                  </ul>
+                </li>
+                <li class="header__category--item">
+                  <a
+                    href="/product/children"
+                    class="header__category--link"
+                  >
+                    TRẺ EM
+                  </a>
+                </li>
+                <li class="header__category--item">
+                  <a href="/product/accessories" class="header__category--link">
+                    PHỤ KIỆN
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="header__category--drop--menu">
+                    <li><a href="">Đồng hồ</a></li>
+                    <li><a href="">Thắt lưng</a></li>
+                  </ul>
+                </li>
+                <li class="header__category--item">
+                  <a href="/contact" class="header__category--link">
+                    LIÊN HỆ
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col l-2 c-8 header__icon">
+              <a
+                href="javascript:void(0);"
+                class="header__icon--link header__icon--user hide-on-pc"
+              >
+                <i class="fa-solid fa-user"></i>
+                <div class="header__user">
+                  <ul class="header__user--list">
+                    <li class="header__user--item">Đăng nhập</li>
+                    <li class="header__user--item">Đăng ký</li>
+                  </ul>
+                </div>
+              </a>
+              <a
+                href="javascript:void(0);"
+                class="header__icon--link header__icon--link--search"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="header__search--detail">
+                  <input
+                    type="text"
+                    placeholder="Tìm kiếm..."
+                    class="header__search--detail--input"
+                  />
+                </div>
+              </a>
+              <a
+                href="javascript:void(0);"
+                class="header__icon--link header__icon--link--cart" id="header__icon--link--cart"
+              >   
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="header__modal">
+          <!-- Trigger/Open The Modal -->
+          <button id="myBtn" class="hide-on-pc modal__button">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <!-- The Modal -->
+          <div id="myModal" class="hide-on-pc modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal__title">
+                <span>DANH MỤC</span>
+                <span class="close">&times;</span>
+              </div>
+              <div class="header__modal--content">
+                <ul class="header__modal--list">
+                  <li class="header__modal--item">
+                    <a href="/product/man">Nam</a>
+                    <div class="dropdown">
+                      <button onclick="myFuntion(event)" class="dropbtn">
+                        <i class="fa-solid fa-angle-down dropbtn"></i>
+                      </button>
+                      <div id="myDropdown" class="dropdown-content">
+                        <a href="#home">Áo thể thao</a>
+                        <a href="#about">Áo Nike</a>
+                        <a href="#contact">Quần Jean</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="header__modal--item">
+                    <a href="/product/woman.html">Nữ</a>
+                    <div class="dropdown">
+                      <button onclick="myFuntion(event)" class="dropbtn">
+                        <i class="fa-solid fa-angle-down dropbtn"></i>
+                      </button>
+                      <div id="myDropdown" class="dropdown-content">
+                        <a href="#home">Quần Jeans</a>
+                        <a href="#about">Váy</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="header__modal--item">
+                    <a href="/product/children.html">Trẻ em</a>
+                  </li>
+                  <li class="header__modal--item">
+                    <a href="">Phụ kiện</a>
+                    <div class="dropdown">
+                      <button onclick="myFuntion(event)" class="dropbtn">
+                        <i class="fa-solid fa-angle-down dropbtn"></i>
+                      </button>
+                      <div id="myDropdown" class="dropdown-content">
+                        <a href="#home">Đồng hồ</a>
+                        <a href="#about">Thắt lưng</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="header__modal--item">
+                    <a href="/contact">Liên hệ</a>
+                  </li>
+                </ul>
+                <div class="header__modal--img">
+                  <img src="/img/header__modal.jpg" alt="" /> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+</header>
+<script src="/js/header.js"></script>
